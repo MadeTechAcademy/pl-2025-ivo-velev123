@@ -6,7 +6,7 @@ on:
     
 defaults:
   run:
-    working-directory: excercises/3-github-actions/
+    working-directory: exercises/3-github-actions/
 
 jobs:
   Build_and_Run:
