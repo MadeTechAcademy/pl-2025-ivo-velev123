@@ -25,7 +25,9 @@ jobs:
       run: pnpm install 
     
     - name: view outdated packages
-      run: echo | pnpm outdated_check 
+      run: |
+        DUMMY=$(pnpm outdated_check)
+        echo $?
 
     - name: prettify the code
       run: pnpm prettier . --write
