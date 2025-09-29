@@ -4,6 +4,10 @@ on:
     branches:
       - main
     
+defaults:
+  run:
+    working-directory: ./excercises/3-github-actions/
+
 jobs:
   Build_and_Run:
     runs-on: ubuntu-latest
@@ -11,8 +15,6 @@ jobs:
     
     - name: checkout code
       uses: actions/checkout@v5
-      with:
-        path: "./3-github-actions/"
     
     - name: set up pnpm
       uses: pnpm/action-setup@v4 
