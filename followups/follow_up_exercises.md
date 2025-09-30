@@ -3,9 +3,13 @@
 ## Tasks
 
 1. Explain how code on your delivery is packaged and deployed.
+
 2. Explain what you understand of the approach to hosting apps in the course.
+
 3. How does this differ from approaches you've used before? What's the impact of changing our mind? and the benefits?
+
 4. Explain the troubleshooting steps you would use on a failing pipeline, either those you learned on this course or those you have used on your delivery.
+
 5. Identify a problem or improvement you could do on a pipeline on your delivery. What did your team decide to do to fix or improve it (even if it hasn't been prioritised yet)?
 
 ## Stretch task

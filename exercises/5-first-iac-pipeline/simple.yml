@@ -9,7 +9,7 @@ env:
  # S3 bucket for the Terraform state
  BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE}}
  OWNER: ${{ vars.OWNER }}
- BUCKET_NAME: "${{ vars.OWNER }}-simple-test"
+ BUCKET_NAME: "${{ vars.OWNER }}-s3-bucket"
 
 permissions:
   id-token: write
