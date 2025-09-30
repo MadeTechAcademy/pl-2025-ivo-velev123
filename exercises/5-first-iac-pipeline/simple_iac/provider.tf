@@ -27,7 +27,7 @@ terraform {
     key            = "pl2025_simple/terraform.tfstate"
     region         = "eu-west-2"
     encrypt        = true
-    kms_key_id     = "alias/ivo-statebucket"
+    kms_key_id     = "ivo-statebucket"
     use_lockfile = true
   }
 }
