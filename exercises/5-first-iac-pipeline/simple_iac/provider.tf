@@ -23,7 +23,7 @@ provider "aws" {
 # TODO replace bucket and kms_key_id below with your own values
 terraform {
   backend "s3" {
-    bucket         = "Ivo-Velev-s3-bucket"
+    bucket         = "Ivo.Velev-s3-bucket"
     key            = "pl2025_simple/terraform.tfstate"
     region         = "eu-west-2"
     encrypt        = true
