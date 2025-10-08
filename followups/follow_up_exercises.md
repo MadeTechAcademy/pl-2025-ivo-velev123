@@ -14,7 +14,7 @@
 
 
 ## Add your answers here, or in this folder
-1. My delivery has a manifest.yml in pipelines/bsl-v1 that defines the ecs machine that it will run onm providing things like the amount of memory and the cpu. There is also another manifest.yml in pipelines/bsl-benchexperiment-main which defines things such as the name of the pipeline the source (github repo) and the trigger for the pipeline which is a push to main. Lastly, there is a buildspec.yml that sets up run time environments downloads aws copilot cli and builds. It then checks if there are any jobs or services running, if not it raises an error which prevents the pipeline from deploying. 
+1. My delivery has a manifest.yml in pipelines/bsl-v1 that defines the ecs machine that it will run on providing things like the amount of memory and the cpu. There is also another manifest.yml in pipelines/bsl-benchexperiment-main which defines things such as the name of the pipeline the source (github repo) and the trigger for the pipeline which is a push to main. Lastly, there is a buildspec.yml that sets up run time environments downloads aws copilot cli and builds. It then checks if there are any jobs or services running, if not it raises an error which prevents the pipeline from deploying. 
 
 2. The pipeline was seperated into two parts, CI and CD. CI featured the steps involved with setting up the environment for the runner, building the code and running tests on the code. CD involves steps such as deploying the app to a dev stage first to run more testing and then deploying to production.
 
