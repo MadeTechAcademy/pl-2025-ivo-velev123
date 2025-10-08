@@ -14,4 +14,12 @@
 
 
 ## Add your answers here, or in this folder
+1. My delivery has a manifest.yml in pipelines/bsl-v1 that defines the ecs machine that it will run on providing things like the amount of memory and the cpu. There is also another manifest.yml in pipelines/bsl-benchexperiment-main which defines things such as the name of the pipeline the source (github repo) and the trigger for the pipeline which is a push to main. Lastly, there is a buildspec.yml that sets up run time environments downloads aws copilot cli and builds. It then checks if there are any jobs or services running, if not it raises an error which prevents the pipeline from deploying. 
 
+2. The pipeline was seperated into two parts, CI and CD. CI featured the steps involved with setting up the environment for the runner, building the code and running tests on the code. CD involves steps such as deploying the app to a dev stage first to run more testing and then deploying to production.
+
+3. I previously used the terraform and github actions on the end of bootcamp project so this course doesn't differ much to the approach we used on the project. However, this course was very useful for me to gain more confidence in writing my own pipelines from scratch and debugging terraform issues and other pipeline bugs. It also helped me to understand the different steps involved in a pipeline and how I would want them to behave.
+
+4. I would start by running the pipeline and reading the error messages. After this I would go and fix the cause of the issue, supporting myself with information from aws console or other resources. I would then check the pipeline again to see if it works, if not I would repeat the steps again.
+
+5. The buildspec.yml in my delivery is quite unreadable due to the fact it is written with some very complex bash and the comments that document the code do not explain it in enough detail to be able to understand what certain blocks of the script are doing. I would fix this by making some variable names more understandable and reduce the amount of one liners to increase the readability of the script and add more comments to the script.

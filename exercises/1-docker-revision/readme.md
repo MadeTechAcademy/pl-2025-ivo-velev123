@@ -16,6 +16,9 @@ Add your thoughts and questions here
 ## Stretch task
 Consider how you might use `docker compose` tools to locally to build, spin up, shut down and clean up containers
 
+you can use docker compose to quickly specify multiple docker containers through the file. This would make it easier to define more containers if your application needs more than one, it would also make it easier to share and view the compose file rather than many dockerfiles. 
+
+
 ### Record your results
 Add your thoughts here and add any files you created into the exercise folder
 

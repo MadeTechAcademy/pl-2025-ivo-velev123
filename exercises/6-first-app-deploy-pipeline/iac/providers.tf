@@ -26,11 +26,11 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "your-own-persistent-state-bucket-name"
+    bucket         = "Ivo-Velev-s3-bucket"
     key            = "p2025-iac-6/terraform.tfstate"
     region         = "eu-west-2"
     encrypt        = true
-    kms_key_id     = "alias/your-own-kms-key-alias-name"
+    kms_key_id     = "alias/ivo-statebucket"
     use_lockfile = true
   }
 }
